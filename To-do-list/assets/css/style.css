@@ -1,0 +1,77 @@
+@import url("https://font.googleapis.com");
+@import url("https://font.gstatic.com");
+@import url("https://font.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,400;1,600&display=swap");
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("To-do-list-main\assets\images\fundo.jpg");
+}
+
+button {
+    
+    border-radius: 35%;
+    border: 2px solid #084910;
+    background-color: #77f185;
+    color: #000000;
+    font-size: 12pt;
+    text-align: center;
+    padding: 5px;
+}
+
+.entrada-texto{
+   
+    text-align:center;
+    font-size: 12pt;
+    border: 2px solid #000000;
+    border-radius: 5%;
+}
+
+.titulo{
+    font-size: 45pt;
+}
+
+#lista-tarefas{
+    display: flex;
+    flex-direction:column;
+    min-height: 50px;
+    min-width: 50px;
+    margin-top: 15px;
+}
+
+.item-tarefa{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+input[type="text"] {
+    min-width: 20px;
+    min-height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.chk{
+    min-width: 25px;
+    min-height: 25px;
+    padding: 5px;
+    border-radius: 5px
+}
+
+label{
+    font-size: 20pt;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
